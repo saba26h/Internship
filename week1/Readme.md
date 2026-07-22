@@ -4,7 +4,11 @@
 
 During the first week of the internship, I started building the foundation needed for AI and Data Science projects.
 
+<<<<<<< HEAD
 The focus of this week was preparing the Python development environment, strengthening Python programming concepts, and getting introduced to numerical computing using NumPy.
+=======
+The focus of this week was preparing the Python development environment, strengthening Python programming concepts, and getting introduced to numerical computing and data analysis using NumPy and Pandas.
+>>>>>>> 7e0d1470f95e7acae52c0276c122d351d5de5dd3
 
 ---
 
@@ -60,6 +64,27 @@ I learned how NumPy arrays work and how they are used for efficient data process
 
 ---
 
+<<<<<<< HEAD
+=======
+## Day 4 - Introduction to Pandas 📊
+
+The fourth day focused on learning the fundamentals of Pandas, one of the most widely used libraries for data analysis and manipulation in Python.
+
+I learned how to load datasets, inspect their structure, clean missing values, filter data based on conditions, and perform aggregation operations to extract useful insights from data.
+
+**Topics Covered:**
+
+- Loading datasets using Pandas.
+- Inspecting data with head(), info(), and describe().
+- Selecting and filtering rows and columns.
+- Handling missing values.
+- Removing duplicate records.
+- Grouping data using groupby().
+- Performing aggregation operations such as mean() and max().
+
+---
+
+>>>>>>> 7e0d1470f95e7acae52c0276c122d351d5de5dd3
 # Week 1 Checklist ✅
 
 ## Day 1 - Environment Setup & Jupyter Workflow
@@ -76,7 +101,11 @@ I learned how NumPy arrays work and how they are used for efficient data process
 
 ## Day 4 - Pandas
 
+<<<<<<< HEAD
 - [ ] A Pandas notebook loading, cleaning, filtering, and aggregating a real dataset.
+=======
+- [x] A Pandas notebook loading, cleaning, filtering, and aggregating a real dataset.
+>>>>>>> 7e0d1470f95e7acae52c0276c122d351d5de5dd3
 
 ## Day 5 - Integrated Mini Notebook
 
@@ -86,6 +115,10 @@ I learned how NumPy arrays work and how they are used for efficient data process
 
 # Week 1 Progress
 
+<<<<<<< HEAD
 So far, I have built a stronger foundation in Python development workflow, programming fundamentals, and numerical computing using NumPy.
+=======
+So far, I have built a stronger foundation in Python development workflow, programming fundamentals, numerical computing with NumPy, and data manipulation using Pandas.
+>>>>>>> 7e0d1470f95e7acae52c0276c122d351d5de5dd3
 
 These skills will support the upcoming work with data analysis, visualization, and machine learning concepts.
