@@ -90,6 +90,3 @@ I learned how to:
 - Prepare a stronger foundation for working with Data Science libraries and AI projects.
 
 ---
-- Pandas
-- Data Visualization
-- Machine Learning Fundamentals
