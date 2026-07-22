@@ -94,11 +94,7 @@ I learned how to load datasets, inspect their structure, clean missing values, f
 
 ## Day 4 - Pandas
 
-<<<<<<< HEAD
-- [ ] A Pandas notebook loading, cleaning, filtering, and aggregating a real dataset.
-=======
 - [x] A Pandas notebook loading, cleaning, filtering, and aggregating a real dataset.
->>>>>>> 7e0d1470f95e7acae52c0276c122d351d5de5dd3
 
 ## Day 5 - Integrated Mini Notebook
 
@@ -108,10 +104,5 @@ I learned how to load datasets, inspect their structure, clean missing values, f
 
 # Week 1 Progress
 
-<<<<<<< HEAD
-So far, I have built a stronger foundation in Python development workflow, programming fundamentals, and numerical computing using NumPy.
-=======
 So far, I have built a stronger foundation in Python development workflow, programming fundamentals, numerical computing with NumPy, and data manipulation using Pandas.
->>>>>>> 7e0d1470f95e7acae52c0276c122d351d5de5dd3
-
 These skills will support the upcoming work with data analysis, visualization, and machine learning concepts.
