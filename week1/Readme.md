@@ -4,11 +4,10 @@
 
 During the first week of the internship, I started building the foundation needed for AI and Data Science projects.
 
-<<<<<<< HEAD
 The focus of this week was preparing the Python development environment, strengthening Python programming concepts, and getting introduced to numerical computing using NumPy.
 =======
 The focus of this week was preparing the Python development environment, strengthening Python programming concepts, and getting introduced to numerical computing and data analysis using NumPy and Pandas.
->>>>>>> 7e0d1470f95e7acae52c0276c122d351d5de5dd3
+
 
 ---
 
