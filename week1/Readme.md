@@ -60,9 +60,6 @@ I learned how NumPy arrays work and how they are used for efficient data process
 - Basic numerical operations and statistics.
 
 ---
-
-<<<<<<< HEAD
-=======
 ## Day 4 - Introduction to Pandas 📊
 
 The fourth day focused on learning the fundamentals of Pandas, one of the most widely used libraries for data analysis and manipulation in Python.
@@ -81,7 +78,6 @@ I learned how to load datasets, inspect their structure, clean missing values, f
 
 ---
 
->>>>>>> 7e0d1470f95e7acae52c0276c122d351d5de5dd3
 # Week 1 Checklist ✅
 
 ## Day 1 - Environment Setup & Jupyter Workflow
