@@ -126,3 +126,18 @@ I created different chart types to explore datasets visually and completed a min
 During this week, I gained practical experience with Python programming, NumPy for numerical computing, Pandas for data analysis, and Matplotlib for data visualization.
 
 I also completed an integrated mini-project that combined these tools to clean, analyze, and visualize data. These skills provide a solid foundation for future work in data analysis, machine learning, and AI applications.
+
+---
+    Week1/
+          │
+          ├── Day1/
+          │
+          ├── Day2/
+          │
+          ├── Day3/
+          │
+          ├── Day4/
+          │
+          ├── Day5/
+          │
+          └── README.md
