@@ -27,6 +27,23 @@ I learned how to identify the center of a dataset, measure its variability, and 
 
 ---
 
+## Day 2 - Probability & Distributions 🎲
+
+The second day focused on understanding probability concepts and probability distributions, which are essential for handling uncertainty and making predictions in Machine Learning.
+
+I learned how to calculate probabilities, apply probability rules, understand conditional probability and Bayes' theorem, and recognize common probability distributions used in data analysis.
+
+**Topics Covered:**
+
+* Probability basics and measuring uncertainty.
+* Complement, addition, and multiplication probability rules.
+* Conditional probability P(A|B).
+* Bayes' theorem and its role in Machine Learning.
+* Normal, Binomial, and Uniform distributions.
+* Applying probability concepts using Python and statistical libraries.
+
+---
+
 # Week 2 Checklist ✅
 
 ## Day 1 - Descriptive Statistics
@@ -35,7 +52,7 @@ I learned how to identify the center of a dataset, measure its variability, and 
 
 ## Day 2 - Probability Fundamentals
 
-* [ ] A notebook covering probability rules, conditional probability, Bayes' theorem, and probability distributions.
+* [x] A notebook covering probability rules, conditional probability, Bayes' theorem, and probability distributions.
 
 ## Day 3 - Linear Algebra for ML
 
@@ -55,22 +72,6 @@ I learned how to identify the center of a dataset, measure its variability, and 
 
 During this week, I am building the statistical and mathematical foundation required for Machine Learning and Data Science.
 
-I started by learning descriptive statistics and will continue with probability, linear algebra, and exploratory data analysis techniques. These skills will help me better understand data, identify patterns, and prepare datasets for future Machine Learning projects.
+I started by learning descriptive statistics and probability concepts, and I will continue with linear algebra and exploratory data analysis techniques. These skills will help me better understand data, identify patterns, and prepare datasets for future Machine Learning projects.
 
 ---
-
-```
-Week2/
-      │
-      ├── Day1/
-      │
-      ├── Day2/
-      │
-      ├── Day3/
-      │
-      ├── Day4/
-      │
-      ├── Day5/
-      │
-      └── README.md
-```
