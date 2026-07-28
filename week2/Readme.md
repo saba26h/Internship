@@ -44,6 +44,25 @@ I learned how to calculate probabilities, apply probability rules, understand co
 
 ---
 
+## Day 3 - Linear Algebra for Machine Learning 🔢
+
+The third day focused on understanding the fundamental concepts of Linear Algebra and their importance in Machine Learning.
+
+I learned how data is represented mathematically using vectors and matrices, and how Machine Learning models use operations such as dot product and matrix multiplication to generate predictions.
+
+**Topics Covered:**
+
+* Understanding why Linear Algebra is the language of Machine Learning.
+* Representing individual samples as vectors.
+* Representing datasets as matrices (samples × features).
+* Understanding matrix shapes and dimensions.
+* Computing dot products between features and weights.
+* Understanding how dot products are used for model predictions.
+* Performing matrix multiplication using NumPy.
+* Understanding shape matching rules and fixing shape mismatch errors.
+
+---
+
 # Week 2 Checklist ✅
 
 ## Day 1 - Descriptive Statistics
@@ -56,7 +75,7 @@ I learned how to calculate probabilities, apply probability rules, understand co
 
 ## Day 3 - Linear Algebra for ML
 
-* [ ] A notebook demonstrating vectors, matrices, dot products, and matrix multiplication.
+* [x] A notebook demonstrating vectors, matrices, dot products, and matrix multiplication.
 
 ## Day 4 - EDA Part 1
 
@@ -72,6 +91,6 @@ I learned how to calculate probabilities, apply probability rules, understand co
 
 During this week, I am building the statistical and mathematical foundation required for Machine Learning and Data Science.
 
-I started by learning descriptive statistics and probability concepts, and I will continue with linear algebra and exploratory data analysis techniques. These skills will help me better understand data, identify patterns, and prepare datasets for future Machine Learning projects.
+I started by learning descriptive statistics and probability concepts, then continued with Linear Algebra concepts used in Machine Learning. I learned how data is represented using vectors and matrices and how mathematical operations such as dot products and matrix multiplication are used to perform predictions.
 
----
+These skills will help me better understand Machine Learning algorithms, analyze data effectively, and prepare datasets for future Machine Learning projects.
