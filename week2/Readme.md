@@ -63,6 +63,23 @@ I learned how data is represented mathematically using vectors and matrices, and
 
 ---
 
+## Day 4 - Exploratory Data Analysis (EDA) Part 1: Distributions & Outliers 📊
+
+The fourth day focused on understanding Exploratory Data Analysis (EDA) and its importance before applying Machine Learning models.
+
+I learned how to explore datasets using statistical visualizations, analyze variable distributions, and detect potential outliers using visualization techniques and the IQR method.
+
+**Topics Covered:**
+
+* Understanding the role of EDA in Machine Learning.
+* Using Seaborn for statistical data visualization.
+* Performing univariate analysis on numerical and categorical variables.
+* Creating histograms, box plots, count plots, and KDE plots.
+* Detecting outliers visually and using the IQR method.
+* Understanding how data distributions and outliers affect data preprocessing.
+
+---
+
 # Week 2 Checklist ✅
 
 ## Day 1 - Descriptive Statistics
@@ -79,7 +96,7 @@ I learned how data is represented mathematically using vectors and matrices, and
 
 ## Day 4 - EDA Part 1
 
-* [ ] A notebook performing univariate analysis and outlier detection using Seaborn visualizations.
+* [x] A notebook performing univariate analysis and outlier detection using Seaborn visualizations.
 
 ## Day 5 - EDA Part 2
 
@@ -89,8 +106,10 @@ I learned how data is represented mathematically using vectors and matrices, and
 
 # Week 2 Progress
 
-During this week, I am building the statistical and mathematical foundation required for Machine Learning and Data Science.
+During this week, I built the statistical and mathematical foundation required for Machine Learning and Data Science.
 
 I started by learning descriptive statistics and probability concepts, then continued with Linear Algebra concepts used in Machine Learning. I learned how data is represented using vectors and matrices and how mathematical operations such as dot products and matrix multiplication are used to perform predictions.
+
+I also learned how to perform Exploratory Data Analysis (EDA) using statistical visualization techniques, analyze data distributions, and detect outliers to improve data understanding and preprocessing.
 
 These skills will help me better understand Machine Learning algorithms, analyze data effectively, and prepare datasets for future Machine Learning projects.
