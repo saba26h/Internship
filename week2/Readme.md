@@ -6,6 +6,8 @@ During the second week of the internship, I focused on building the mathematical
 
 The focus of this week was understanding descriptive statistics, probability fundamentals, linear algebra concepts used in machine learning, and performing Exploratory Data Analysis (EDA) using statistical techniques and data visualization tools.
 
+Throughout this week, I learned how to analyze datasets, understand patterns, perform statistical calculations, visualize data, detect data quality issues, and prepare datasets for future Machine Learning tasks.
+
 ---
 
 # Completed Days
@@ -24,6 +26,7 @@ I learned how to identify the center of a dataset, measure its variability, and 
 * Percentiles and Quartiles.
 * Interpreting descriptive statistics.
 * Understanding the effect of outliers on statistical measures.
+* Using Python and Pandas to calculate statistical measurements.
 
 ---
 
@@ -40,6 +43,7 @@ I learned how to calculate probabilities, apply probability rules, understand co
 * Conditional probability P(A|B).
 * Bayes' theorem and its role in Machine Learning.
 * Normal, Binomial, and Uniform distributions.
+* Understanding probability distributions and their characteristics.
 * Applying probability concepts using Python and statistical libraries.
 
 ---
@@ -77,6 +81,30 @@ I learned how to explore datasets using statistical visualizations, analyze vari
 * Creating histograms, box plots, count plots, and KDE plots.
 * Detecting outliers visually and using the IQR method.
 * Understanding how data distributions and outliers affect data preprocessing.
+* Making decisions about removing, transforming, or keeping outliers.
+
+---
+
+## Day 5 - Exploratory Data Analysis (EDA) Part 2: Correlation & Data Storytelling 📊
+
+The fifth day focused on completing the Exploratory Data Analysis (EDA) workflow by analyzing relationships between variables and extracting meaningful insights from datasets.
+
+I learned how to move from analyzing individual variables to studying relationships between features using bivariate analysis, correlation analysis, and advanced visualization techniques.
+
+I also learned how to communicate EDA results through data storytelling by transforming analysis outputs into clear and meaningful conclusions.
+
+**Topics Covered:**
+
+* Performing bivariate analysis to study relationships between two variables.
+* Creating scatter plots to analyze relationships between numerical features.
+* Creating grouped box plots to compare numerical distributions across categories.
+* Understanding correlation and measuring relationships between numerical variables.
+* Computing correlation matrices using Pandas.
+* Visualizing correlations using heatmaps with Seaborn.
+* Understanding that correlation does not imply causation.
+* Using pairplots to explore relationships between multiple numerical variables.
+* Applying data storytelling techniques to explain patterns, findings, and insights.
+* Building a complete narrated EDA notebook that combines statistics, visualization, and analysis results.
 
 ---
 
@@ -96,11 +124,11 @@ I learned how to explore datasets using statistical visualizations, analyze vari
 
 ## Day 4 - EDA Part 1
 
-* [x] A notebook performing univariate analysis and outlier detection using Seaborn visualizations.
+* [x] A notebook performing univariate analysis and outlier detection using Seaborn visualizations and the IQR method.
 
 ## Day 5 - EDA Part 2
 
-* [ ] A complete EDA notebook including bivariate analysis, correlation analysis, visualizations, and data storytelling.
+* [x] A complete EDA notebook including bivariate analysis, correlation analysis, visualizations, and data storytelling.
 
 ---
 
@@ -110,6 +138,8 @@ During this week, I built the statistical and mathematical foundation required f
 
 I started by learning descriptive statistics and probability concepts, then continued with Linear Algebra concepts used in Machine Learning. I learned how data is represented using vectors and matrices and how mathematical operations such as dot products and matrix multiplication are used to perform predictions.
 
-I also learned how to perform Exploratory Data Analysis (EDA) using statistical visualization techniques, analyze data distributions, and detect outliers to improve data understanding and preprocessing.
+I also learned how to perform Exploratory Data Analysis (EDA) using statistical visualization techniques, analyze data distributions, detect outliers, and improve data understanding before building Machine Learning models.
 
-These skills will help me better understand Machine Learning algorithms, analyze data effectively, and prepare datasets for future Machine Learning projects.
+Through completing the full EDA workflow, I learned how to study relationships between variables using bivariate analysis, correlation analysis, heatmaps, and pairplots. I also learned the importance of data storytelling and how to communicate analytical findings clearly.
+
+These skills will help me better understand Machine Learning algorithms, analyze data effectively, and prepare high-quality datasets for future Machine Learning projects.
