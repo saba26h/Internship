@@ -1,0 +1,11 @@
+name,gender,age,hours_studied,score,department
+Ahmad,Male,19,2,65.0,CS
+Lina,Female,20,5,85.0,CE
+Omar,Male,18,,70.0,IT
+Sara,Female,19,7,49.0,CS
+Yousef,Male,60,6,,CE
+Maya,Female,20,4,75.0,IT
+Ali,Male,18,8,95.0,CS
+Noor,Male,22,1,60.0,IT
+Rami,Male,18,3,72.0,CE
+Huda,Female,21,6,31.0,CS
