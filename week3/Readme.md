@@ -37,6 +37,32 @@ I learned how models learn patterns from labeled datasets, how data is prepared 
 
 ---
 
+## Day 2 - Linear Regression & Model Evaluation 📈
+
+The second day focused on understanding Linear Regression and the process of building and evaluating regression models.
+
+I learned how Linear Regression predicts continuous values, how models learn relationships between features and targets, and how to evaluate regression model performance using different metrics.
+
+**Topics Covered:**
+
+* Understanding the concept of Linear Regression.
+* Learning how Linear Regression fits the best line through data.
+* Understanding predictions using weights and bias.
+* Training Linear Regression models using Scikit-learn.
+* Using the `fit()` method for model training.
+* Using the `predict()` method for generating predictions.
+* Understanding and interpreting model coefficients.
+* Understanding the role of the intercept (bias).
+* Identifying the influence of features on predictions.
+* Understanding regression evaluation metrics.
+* Calculating Mean Absolute Error (MAE).
+* Calculating Root Mean Squared Error (RMSE).
+* Calculating R² score.
+* Comparing model performance against a baseline model.
+* Understanding whether a model provides meaningful improvements over simple predictions.
+
+---
+
 # Week 3 Checklist ✅
 
 ## Day 1 - Supervised Learning Concepts & Scikit-learn API
@@ -45,7 +71,7 @@ I learned how models learn patterns from labeled datasets, how data is prepared 
 
 ## Day 2 - Linear Regression
 
-* [ ] A notebook demonstrating linear regression model training, prediction, coefficients, and regression evaluation metrics.
+* [x] A notebook demonstrating linear regression model training, prediction, coefficients, and regression evaluation metrics.
 
 ## Day 3 - Logistic Regression & Classification
 
@@ -68,5 +94,7 @@ During this week, I started learning the foundations of Machine Learning by focu
 I learned the main workflow used in Machine Learning projects, starting from preparing datasets and separating features from targets, to splitting data into training and testing sets for evaluation.
 
 I also became familiar with the Scikit-learn API and its standard workflow for building models using methods such as `fit()` for training and `predict()` for making predictions.
+
+Additionally, I learned how Linear Regression models work, how they generate predictions using learned parameters, and how to evaluate regression models using MAE, RMSE, and R² metrics.
 
 Understanding these concepts provides the foundation required for developing regression and classification models, evaluating their performance, and building complete Machine Learning pipelines in future tasks.
