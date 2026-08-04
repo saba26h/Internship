@@ -63,6 +63,33 @@ I learned how Linear Regression predicts continuous values, how models learn rel
 
 ---
 
+## Day 3 - Logistic Regression & Classification Metrics 📊
+
+The third day focused on understanding Logistic Regression as a classification algorithm and learning how to evaluate classification models using different performance metrics.
+
+I learned how Logistic Regression predicts class probabilities, how classification models are evaluated, and why accuracy alone is not always sufficient for measuring model performance.
+
+**Topics Covered:**
+
+* Understanding Logistic Regression as a classification algorithm.
+* Learning how weighted sums are converted into probabilities using the sigmoid function.
+* Understanding class probabilities and prediction thresholds.
+* Training Logistic Regression models using Scikit-learn.
+* Using `predict()` for generating class predictions.
+* Using `predict_proba()` for obtaining class probabilities.
+* Understanding why accuracy can be misleading on imbalanced datasets.
+* Learning the structure of the confusion matrix.
+* Understanding True Positive (TP), True Negative (TN), False Positive (FP), and False Negative (FN).
+* Calculating and interpreting Precision.
+* Calculating and interpreting Recall.
+* Understanding the trade-off between Precision and Recall.
+* Calculating F1-score for balanced model evaluation.
+* Understanding AUC-ROC and its importance for classification evaluation.
+* Using `confusion_matrix()` and `classification_report()` from Scikit-learn.
+* Calculating AUC-ROC using `roc_auc_score()`.
+
+---
+
 # Week 3 Checklist ✅
 
 ## Day 1 - Supervised Learning Concepts & Scikit-learn API
@@ -75,7 +102,7 @@ I learned how Linear Regression predicts continuous values, how models learn rel
 
 ## Day 3 - Logistic Regression & Classification
 
-* [ ] A notebook covering logistic regression, classification concepts, confusion matrix, and classification evaluation metrics.
+* [x] A notebook covering logistic regression, classification concepts, confusion matrix, and classification evaluation metrics.
 
 ## Day 4 - Machine Learning Algorithms Comparison
 
@@ -96,5 +123,7 @@ I learned the main workflow used in Machine Learning projects, starting from pre
 I also became familiar with the Scikit-learn API and its standard workflow for building models using methods such as `fit()` for training and `predict()` for making predictions.
 
 Additionally, I learned how Linear Regression models work, how they generate predictions using learned parameters, and how to evaluate regression models using MAE, RMSE, and R² metrics.
+
+Furthermore, I learned how Logistic Regression is used for classification tasks, how models generate class probabilities, and how classification performance can be evaluated using confusion matrix, Precision, Recall, F1-score, and AUC-ROC.
 
 Understanding these concepts provides the foundation required for developing regression and classification models, evaluating their performance, and building complete Machine Learning pipelines in future tasks.
