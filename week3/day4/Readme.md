@@ -1,4 +1,4 @@
-# Day 4 - Decision Trees, Random Forests, SVM & k-Nearest Neighbors
+# Day 4 - Decision Trees, Random Forests, SVM & k-Nearest Neighbors 🌳🤖
 
 ## Overview
 
