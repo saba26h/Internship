@@ -20,20 +20,20 @@ I learned how models learn patterns from labeled datasets, how data is prepared 
 
 **Topics Covered:**
 
-* Understanding the concept of Supervised Learning.
-* Understanding labeled datasets and how models learn from examples.
-* Differentiating between features (X) and target variables (y).
-* Understanding the difference between Regression and Classification problems.
-* Learning the general Machine Learning workflow.
-* Splitting datasets into training and testing sets.
-* Using `train_test_split()` from Scikit-learn.
-* Understanding the importance of train/test split for model evaluation.
-* Using `random_state` to achieve reproducible results.
-* Understanding the Scikit-learn API structure.
-* Creating and initializing Machine Learning models.
-* Using the `fit()` method for model training.
-* Using the `predict()` method for generating predictions.
-* Understanding the common workflow shared between different Scikit-learn models.
+- Understanding the concept of Supervised Learning.
+- Understanding labeled datasets and how models learn from examples.
+- Differentiating between features (X) and target variables (y).
+- Understanding the difference between Regression and Classification problems.
+- Learning the general Machine Learning workflow.
+- Splitting datasets into training and testing sets.
+- Using `train_test_split()` from Scikit-learn.
+- Understanding the importance of train/test split for model evaluation.
+- Using `random_state` to achieve reproducible results.
+- Understanding the Scikit-learn API structure.
+- Creating and initializing Machine Learning models.
+- Using the `fit()` method for model training.
+- Using the `predict()` method for generating predictions.
+- Understanding the common workflow shared between different Scikit-learn models.
 
 ---
 
@@ -45,21 +45,21 @@ I learned how Linear Regression predicts continuous values, how models learn rel
 
 **Topics Covered:**
 
-* Understanding the concept of Linear Regression.
-* Learning how Linear Regression fits the best line through data.
-* Understanding predictions using weights and bias.
-* Training Linear Regression models using Scikit-learn.
-* Using the `fit()` method for model training.
-* Using the `predict()` method for generating predictions.
-* Understanding and interpreting model coefficients.
-* Understanding the role of the intercept (bias).
-* Identifying the influence of features on predictions.
-* Understanding regression evaluation metrics.
-* Calculating Mean Absolute Error (MAE).
-* Calculating Root Mean Squared Error (RMSE).
-* Calculating R² score.
-* Comparing model performance against a baseline model.
-* Understanding whether a model provides meaningful improvements over simple predictions.
+- Understanding the concept of Linear Regression.
+- Learning how Linear Regression fits the best line through data.
+- Understanding predictions using weights and bias.
+- Training Linear Regression models using Scikit-learn.
+- Using the `fit()` method for model training.
+- Using the `predict()` method for generating predictions.
+- Understanding and interpreting model coefficients.
+- Understanding the role of the intercept (bias).
+- Identifying the influence of features on predictions.
+- Understanding regression evaluation metrics.
+- Calculating Mean Absolute Error (MAE).
+- Calculating Root Mean Squared Error (RMSE).
+- Calculating R² score.
+- Comparing model performance against a baseline model.
+- Understanding whether a model provides meaningful improvements over simple predictions.
 
 ---
 
@@ -71,22 +71,22 @@ I learned how Logistic Regression predicts class probabilities, how classificati
 
 **Topics Covered:**
 
-* Understanding Logistic Regression as a classification algorithm.
-* Learning how weighted sums are converted into probabilities using the sigmoid function.
-* Understanding class probabilities and prediction thresholds.
-* Training Logistic Regression models using Scikit-learn.
-* Using `predict()` for generating class predictions.
-* Using `predict_proba()` for obtaining class probabilities.
-* Understanding why accuracy can be misleading on imbalanced datasets.
-* Learning the structure of the confusion matrix.
-* Understanding True Positive (TP), True Negative (TN), False Positive (FP), and False Negative (FN).
-* Calculating and interpreting Precision.
-* Calculating and interpreting Recall.
-* Understanding the trade-off between Precision and Recall.
-* Calculating F1-score for balanced model evaluation.
-* Understanding AUC-ROC and its importance for classification evaluation.
-* Using `confusion_matrix()` and `classification_report()` from Scikit-learn.
-* Calculating AUC-ROC using `roc_auc_score()`.
+- Understanding Logistic Regression as a classification algorithm.
+- Learning how weighted sums are converted into probabilities using the sigmoid function.
+- Understanding class probabilities and prediction thresholds.
+- Training Logistic Regression models using Scikit-learn.
+- Using `predict()` for generating class predictions.
+- Using `predict_proba()` for obtaining class probabilities.
+- Understanding why accuracy can be misleading on imbalanced datasets.
+- Learning the structure of the confusion matrix.
+- Understanding True Positive (TP), True Negative (TN), False Positive (FP), and False Negative (FN).
+- Calculating and interpreting Precision.
+- Calculating and interpreting Recall.
+- Understanding the trade-off between Precision and Recall.
+- Calculating F1-score for balanced model evaluation.
+- Understanding AUC-ROC and its importance for classification evaluation.
+- Using `confusion_matrix()` and `classification_report()` from Scikit-learn.
+- Calculating AUC-ROC using `roc_auc_score()`.
 
 ---
 
@@ -98,16 +98,37 @@ I learned how Decision Trees, Random Forests, Support Vector Machines (SVM), and
 
 **Topics Covered:**
 
-* Learning why Decision Trees are easy to interpret but prone to overfitting.
-* Understanding how Random Forest combines multiple Decision Trees to improve performance.
-* Interpreting feature importance values generated by Random Forest.
-* Understanding how Support Vector Machines find the optimal decision boundary.
-* Understanding how k-Nearest Neighbors classifies samples using the nearest neighbors.
-* Training Decision Tree, Random Forest, SVM, and k-NN models using Scikit-learn.
-* Comparing multiple classifiers using the same train/test split.
-* Evaluating all models using the Weighted F1-Score.
-* Identifying the best-performing model for the dataset.
-* Interpreting Random Forest feature importance to understand which features contributed most to the predictions.
+- Learning why Decision Trees are easy to interpret but prone to overfitting.
+- Understanding how Random Forest combines multiple Decision Trees to improve performance.
+- Interpreting feature importance values generated by Random Forest.
+- Understanding how Support Vector Machines find the optimal decision boundary.
+- Understanding how k-Nearest Neighbors classifies samples using the nearest neighbors.
+- Training Decision Tree, Random Forest, SVM, and k-NN models using Scikit-learn.
+- Comparing multiple classifiers using the same train/test split.
+- Evaluating all models using the Weighted F1-Score.
+- Identifying the best-performing model for the dataset.
+- Interpreting Random Forest feature importance to understand which features contributed most to the predictions.
+
+---
+
+## Day 5 - Supervised Learning Mini-Project 📊🤖
+
+The fifth day focused on combining all supervised learning concepts into a complete end-to-end machine learning project.
+
+I learned how to build a full machine learning pipeline, starting with Exploratory Data Analysis (EDA), followed by data preprocessing, train/test splitting, model training, evaluation, and final model selection. I also learned the importance of preventing data leakage and comparing model performance against a baseline.
+
+**Topics Covered:**
+
+- Understanding the complete supervised learning pipeline.
+- Performing Exploratory Data Analysis (EDA).
+- Handling missing values and encoding categorical features.
+- Applying feature scaling using `StandardScaler`.
+- Preventing data leakage during preprocessing.
+- Selecting appropriate models and evaluation metrics.
+- Comparing model performance against a baseline.
+- Training and evaluating multiple machine learning models.
+- Selecting and justifying the best-performing model.
+- Documenting the complete workflow in a Jupyter Notebook.
 
 ---
 
@@ -115,23 +136,66 @@ I learned how Decision Trees, Random Forests, Support Vector Machines (SVM), and
 
 ## Day 1 - Supervised Learning Concepts & Scikit-learn API
 
-* [x] A notebook demonstrating supervised learning concepts, feature/target separation, train/test split, and basic Scikit-learn workflow.
+- [x] A notebook demonstrating supervised learning concepts, feature/target separation, train/test split, and basic Scikit-learn workflow.
 
 ## Day 2 - Linear Regression
 
-* [x] A notebook demonstrating linear regression model training, prediction, coefficients, and regression evaluation metrics.
+- [x] A notebook demonstrating linear regression model training, prediction, coefficients, and regression evaluation metrics.
 
 ## Day 3 - Logistic Regression & Classification
 
-* [x] A notebook covering logistic regression, classification concepts, confusion matrix, and classification evaluation metrics.
+- [x] A notebook covering logistic regression, classification concepts, confusion matrix, and classification evaluation metrics.
 
 ## Day 4 - Decision Trees, Random Forests, SVM & k-Nearest Neighbors
 
-* [x] A notebook comparing Decision Tree, Random Forest, SVM, and k-NN classifiers using the same train/test split and the Weighted F1-Score, including feature importance analysis and model comparison.
+- [x] A notebook comparing Decision Tree, Random Forest, SVM, and k-NN classifiers using the same train/test split and the Weighted F1-Score, including feature importance analysis and model comparison.
 
 ## Day 5 - Supervised Learning Mini-Project
 
-* [ ] A complete Machine Learning pipeline applied to a real dataset, including data preparation, model training, evaluation, and analysis.
+- [x] A complete Machine Learning pipeline applied to a real dataset, including EDA, preprocessing, train/test split, model training, evaluation, model comparison, and final model selection.
+
+---
+
+# Week 3 Folder Structure
+
+```text
+Week-3/
+│
+├── Day-1-Supervised-Learning-Concepts-Scikit-Learn-API/
+│   ├── Supervised-Learning-homework.ipynb
+    ├── Supervised-Learning.ipynb
+    ├── homework.csv
+    ├── students.csv
+│   └── Readme.md
+│
+├── Day-2-Linear-Regression/
+│   ├── house_prices.csv
+    ├── Linear_Regression_homework.ipynb
+    ├── Linear_Regression.ipynb
+    ├── student_scores.csv
+│   └── Readme.md
+│
+├── Day-3-Logistic-Regression-Classification-Metrics/
+│   ├── customer_churn.csv
+    ├── Logistic-Regression-homework.ipynb
+    ├── Logistic-Regression.ipynb
+    ├── sstudent_pass.csv
+│   └── Readme.md
+│
+├── Day-4-Decision-Trees-Random-Forests-SVM-kNN/
+│   ├── Hands_on_lab_day4.ipynb
+    ├── students_ml_lab.csv
+    ├── students_train.csv
+    ├── Trees_Forests_SVMs_k-NN.ipynb
+│   └── Readme.md
+│
+├── Day-5-Supervised-Learning-Mini-Project/
+│   ├── Mini-Project.ipynb
+    ├── student_performance_dataset.csv
+│   └── Readme.md
+│
+└── Readme.md
+```
 
 ---
 
@@ -148,5 +212,7 @@ Additionally, I learned how Linear Regression models work, how they generate pre
 Furthermore, I learned how Logistic Regression is used for classification tasks, how models generate class probabilities, and how classification performance can be evaluated using confusion matrix, Precision, Recall, F1-score, and AUC-ROC.
 
 In addition, I learned how different supervised learning algorithms make classification decisions and how to compare them fairly using the same training and testing datasets. I explored Decision Trees, Random Forests, Support Vector Machines (SVM), and k-Nearest Neighbors (k-NN), understood their strengths and limitations, evaluated their performance using the Weighted F1-Score, and interpreted Random Forest feature importance to identify the most influential features in the dataset.
+
+Finally, I applied all the concepts learned throughout the week in a complete supervised learning mini-project. I performed EDA, preprocessing, feature scaling, model training, evaluation, and model comparison while following best practices such as preventing data leakage and documenting the entire workflow.
 
 Understanding these concepts provides the foundation required for developing regression and classification models, evaluating their performance, comparing different algorithms, and building complete Machine Learning pipelines in future tasks.
