@@ -35,6 +35,31 @@ I learned how to divide a dataset into training, validation, and test sets, how 
 
 ---
 
+## Day 2 - Cross-Validation 🔄📊
+
+The second day focused on understanding Cross-Validation and why it can provide a more reliable performance estimate than using a single validation split.
+
+I learned how k-fold cross-validation works, how to use `cross_val_score()`, how to interpret the mean and standard deviation of the scores, and why stratified k-fold is important for classification problems.
+
+**Topics Covered:**
+
+* Understanding why cross-validation can provide a more reliable estimate than a single validation split.
+* Understanding how k-fold cross-validation works.
+* Dividing training data into multiple folds.
+* Using one fold for validation and the remaining folds for training.
+* Understanding that every data point is used for validation exactly once.
+* Understanding that every data point is used for training `k - 1` times.
+* Using `cross_val_score()` for cross-validation.
+* Using 5-fold cross-validation.
+* Interpreting the mean of the cross-validation scores.
+* Interpreting the standard deviation of the scores across folds.
+* Understanding why a high mean with a low standard deviation indicates more stable performance.
+* Understanding why stratified k-fold is important for classification.
+* Understanding how stratified k-fold preserves the original class balance across folds.
+* Comparing the cross-validated estimate with the single-split score from Day 1.
+
+---
+
 # Week 4 Checklist ✅
 
 ## Day 1 - Train / Validation / Test Splits
@@ -43,7 +68,7 @@ I learned how to divide a dataset into training, validation, and test sets, how 
 
 ## Day 2 - Cross-Validation
 
-* [ ] A notebook demonstrating k-fold and stratified k-fold cross-validation using `cross_val_score()`.
+* [x] A notebook demonstrating k-fold and stratified k-fold cross-validation using `cross_val_score()`.
 
 ## Day 3 - Bias-Variance Trade-off
 
@@ -62,5 +87,7 @@ I learned how to divide a dataset into training, validation, and test sets, how 
 # Week 4 Progress
 
 During Day 1, I learned how to create a 60/20/20 train/validation/test split and use each set correctly for training, tuning, and final evaluation.
+
+During Day 2, I learned how to use cross-validation with multiple folds, interpret the mean and standard deviation of the scores, and understand the importance of stratified folds for classification.
 
 I also practiced tuning a model using the validation set and learned why the test set must remain unseen until the final evaluation.
