@@ -60,6 +60,34 @@ I learned how k-fold cross-validation works, how to use `cross_val_score()`, how
 
 ---
 
+## Day 3 - Bias-Variance & Diagnosing Model Fit ⚖️📈
+
+The third day focused on understanding the bias-variance trade-off, distinguishing between underfitting and overfitting, and diagnosing model fit using training and validation performance.
+
+I learned how model complexity affects bias and variance, how to identify underfitting and overfitting from the train-vs-validation score gap, and how to reduce overfitting by simplifying the model or applying regularization.
+
+**Topics Covered:**
+
+* Understanding underfitting and overfitting.
+* Understanding underfitting as high bias.
+* Understanding overfitting as high variance.
+* Understanding how model complexity affects bias and variance.
+* Understanding the bias-variance trade-off.
+* Diagnosing underfitting using low training and validation scores.
+* Diagnosing overfitting using a large train-validation score gap.
+* Identifying good model fit when training and validation scores are both high with a small gap.
+* Deliberately creating an overfitted Decision Tree.
+* Deliberately creating an underfitted Decision Tree.
+* Comparing training and validation scores to diagnose model fit.
+* Reducing model complexity to fix overfitting.
+* Understanding regularization as a technique for reducing overfitting.
+* Learning about Ridge (L2) regularization.
+* Learning about Lasso (L1) regularization.
+* Understanding how the `alpha` parameter controls regularization strength.
+* Documenting model diagnoses and fixes using score evidence.
+
+---
+
 # Week 4 Checklist ✅
 
 ## Day 1 - Train / Validation / Test Splits
@@ -72,7 +100,7 @@ I learned how k-fold cross-validation works, how to use `cross_val_score()`, how
 
 ## Day 3 - Bias-Variance Trade-off
 
-* [ ] A notebook demonstrating the bias-variance trade-off and diagnosing overfitting and underfitting.
+* [x] A notebook demonstrating the bias-variance trade-off and diagnosing overfitting and underfitting.
 
 ## Day 4 - Feature Engineering & Hyperparameter Tuning
 
@@ -90,4 +118,6 @@ During Day 1, I learned how to create a 60/20/20 train/validation/test split and
 
 During Day 2, I learned how to use cross-validation with multiple folds, interpret the mean and standard deviation of the scores, and understand the importance of stratified folds for classification.
 
-I also practiced tuning a model using the validation set and learned why the test set must remain unseen until the final evaluation.
+During Day 3, I learned how to distinguish between underfitting and overfitting using training and validation scores, understand the bias-variance trade-off, and apply model complexity reduction and regularization to improve model fit.
+
+I also practiced diagnosing model behavior using score evidence and learned why finding the right balance between bias and variance is important for building models that generalize well.
