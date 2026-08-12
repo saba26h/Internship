@@ -88,6 +88,41 @@ I learned how model complexity affects bias and variance, how to identify underf
 
 ---
 
+## Day 4 - Feature Engineering & Hyperparameter Tuning ⚙️📊
+
+The fourth day focused on understanding **Feature Engineering** and **Hyperparameter Tuning**, and how these techniques can improve Machine Learning model performance.
+
+I learned how to create more informative features, apply appropriate transformations, distinguish between parameters and hyperparameters, and systematically search for better model configurations using `GridSearchCV` and cross-validation.
+
+**Topics Covered:**
+
+* Understanding Feature Engineering and its role in Machine Learning.
+* Learning why better features can sometimes improve model performance more than choosing a more complex model.
+* Creating new features from existing columns.
+* Understanding feature creation and transformation.
+* Using binning to group continuous variables into meaningful ranges.
+* Understanding one-hot encoding for categorical variables.
+* Extracting useful information from datetime features.
+* Understanding the role of scaling in Feature Engineering.
+* Understanding the difference between parameters and hyperparameters.
+* Learning that parameters are learned by the model during training.
+* Learning that hyperparameters are selected before training.
+* Understanding common hyperparameters such as `max_depth`, `n_estimators`, `k`, and `alpha`.
+* Understanding hyperparameter tuning as a systematic search problem.
+* Defining a hyperparameter grid.
+* Using `GridSearchCV` for automated hyperparameter tuning.
+* Combining GridSearchCV with 5-fold cross-validation.
+* Using `best_params_` to identify the best hyperparameter combination.
+* Using `best_score_` to obtain the best cross-validated score.
+* Using `best_estimator_` to retrieve the best trained model.
+* Understanding how the number of hyperparameter combinations affects computational cost.
+* Learning how `RandomizedSearchCV` can be used for larger search spaces.
+* Comparing the tuned model with an untuned baseline.
+* Identifying which engineered features and hyperparameters had the greatest impact on performance.
+* Documenting the feature engineering and tuning process using Markdown and score evidence.
+
+---
+
 # Week 4 Checklist ✅
 
 ## Day 1 - Train / Validation / Test Splits
@@ -104,7 +139,7 @@ I learned how model complexity affects bias and variance, how to identify underf
 
 ## Day 4 - Feature Engineering & Hyperparameter Tuning
 
-* [ ] A notebook demonstrating feature engineering and hyperparameter tuning using `GridSearchCV`.
+* [x] A notebook demonstrating feature engineering and hyperparameter tuning using `GridSearchCV`.
 
 ## Day 5 - Scikit-learn Pipelines & Mini-Project
 
@@ -120,4 +155,8 @@ During Day 2, I learned how to use cross-validation with multiple folds, interpr
 
 During Day 3, I learned how to distinguish between underfitting and overfitting using training and validation scores, understand the bias-variance trade-off, and apply model complexity reduction and regularization to improve model fit.
 
-I also practiced diagnosing model behavior using score evidence and learned why finding the right balance between bias and variance is important for building models that generalize well.
+During Week 4, I learned how to validate and diagnose Machine Learning models using train/validation/test splits, cross-validation, and bias-variance analysis.
+
+I also practiced feature engineering and systematic hyperparameter tuning using GridSearchCV, preparing for the final Pipeline-based mini-project.
+
+Overall, Week 4 has helped me move from simply training Machine Learning models toward **validating, diagnosing, improving, and systematically optimizing models** before building a complete end-to-end pipeline.
