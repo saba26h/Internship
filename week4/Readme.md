@@ -6,7 +6,7 @@ During the fourth week of the internship, I started learning more advanced techn
 
 The focus of this week is understanding how to obtain more reliable estimates of model performance, compare different model configurations, diagnose overfitting and underfitting, perform feature engineering, tune hyperparameters, and build complete Machine Learning pipelines using Scikit-learn.
 
-Throughout this week, I will learn how to use train/validation/test splits, cross-validation techniques, bias-variance concepts, feature engineering, hyperparameter tuning, and Scikit-learn Pipelines to develop more reliable and optimized Machine Learning models.
+Throughout this week, I learned how to use train/validation/test splits, cross-validation techniques, bias-variance concepts, feature engineering, hyperparameter tuning, and Scikit-learn Pipelines to develop more reliable and optimized Machine Learning models.
 
 ---
 
@@ -123,6 +123,36 @@ I learned how to create more informative features, apply appropriate transformat
 
 ---
 
+## Day 5 - Scikit-learn Pipelines & Tuned Mini-Project ⚙️🔗
+
+The fifth day focused on understanding how to build complete Machine Learning workflows using Scikit-learn Pipelines, ColumnTransformer, and GridSearchCV.
+
+I learned how to combine preprocessing, feature engineering, model training, hyperparameter tuning, and evaluation into a single leak-free workflow that follows professional Machine Learning practices.
+
+**Topics Covered:**
+
+* Understanding why pipelines exist and how they prevent data leakage.
+* Learning how preprocessing performed outside a pipeline can introduce leakage.
+* Building a Pipeline that combines preprocessing and modeling.
+* Understanding how pipelines automatically apply transformations in the correct order.
+* Learning how preprocessing is fit only on training data.
+* Understanding why pipelines produce more reliable evaluation results.
+* Using ColumnTransformer for datasets containing both numerical and categorical features.
+* Applying StandardScaler to numerical features.
+* Applying OneHotEncoder to categorical features.
+* Combining ColumnTransformer and Pipeline into a single workflow.
+* Understanding how to build a complete end-to-end Machine Learning pipeline.
+* Learning how to tune an entire pipeline using GridSearchCV.
+* Understanding the double-underscore (`__`) notation for pipeline parameters.
+* Applying 5-fold cross-validation during pipeline tuning.
+* Using GridSearchCV to identify the best-performing pipeline configuration.
+* Building a tuned Machine Learning workflow using feature engineering, preprocessing, modeling, and hyperparameter tuning.
+* Evaluating the final tuned pipeline on a held-out test set.
+* Comparing the tuned pipeline against a baseline model.
+* Understanding how professional Machine Learning workflows are structured to be reproducible and leak-free.
+
+---
+
 # Week 4 Checklist ✅
 
 ## Day 1 - Train / Validation / Test Splits
@@ -143,7 +173,50 @@ I learned how to create more informative features, apply appropriate transformat
 
 ## Day 5 - Scikit-learn Pipelines & Mini-Project
 
-* [ ] A complete Machine Learning mini-project using Scikit-learn Pipelines and a tuned end-to-end workflow.
+* [x] A complete Machine Learning mini-project using Scikit-learn Pipelines and a tuned end-to-end workflow.
+
+---
+
+# Week 4 Folder Structure
+
+```text
+Week-4/
+│
+├── Day-1-Train-Validation-Test-Splits/
+│   ├── Validation-hands-on-lab.ipynb
+│   ├── student_train.csv
+│   ├── student_performance_dataset.csv
+│   ├── Readme.md
+│   └── Validation-train.ipynb
+│
+├── Day-2-Cross-Validation/
+│   ├── Cross-Validation-train.ipynb
+│   ├── customers_ml_lab.csv
+│   ├── Hands-on-lab.ipynb
+│   ├── student_performance_dataset.csv
+│   └── Readme.md
+│
+├── Day-3-Bias-Variance-Diagnosing-Model-Fit/
+│   ├── Bias-Variance__Diagnosing_Model_Fit-train.ipynb
+│   ├── customers_ml_lab.csv
+│   ├── Hands-on-lab.ipynb
+│   ├── Readme.md
+│   └── titanic.csv
+│
+├── Day-4-Feature-Engineering-Hyperparameter-Tuning/
+│   ├── customers_ml_lab.csv
+│   ├── Feature_Engineering_and_Hyperparameter_Tuning_train.ipynb
+│   ├── Hands-on-lab.ipynb
+│   ├── Readme.md
+│   └── titanic.csv
+│
+├── Day-5-Scikit-Learn-Pipelines-Tuned-Mini-Project/
+│   ├── Readme.md
+│   ├── Scikit-learn Pipelines & Tuned Mini-Project.ipynb
+│   └── titanic.csv
+│
+└── Readme.md
+```
 
 ---
 
@@ -155,8 +228,10 @@ During Day 2, I learned how to use cross-validation with multiple folds, interpr
 
 During Day 3, I learned how to distinguish between underfitting and overfitting using training and validation scores, understand the bias-variance trade-off, and apply model complexity reduction and regularization to improve model fit.
 
-During Week 4, I learned how to validate and diagnose Machine Learning models using train/validation/test splits, cross-validation, and bias-variance analysis.
+During Day 4, I learned how to create more informative features and systematically tune Machine Learning models using GridSearchCV and cross-validation.
 
-I also practiced feature engineering and systematic hyperparameter tuning using GridSearchCV, preparing for the final Pipeline-based mini-project.
+During Day 5, I learned how to build complete Scikit-learn Pipelines, use ColumnTransformer for mixed feature types, and tune an entire workflow using GridSearchCV and 5-fold cross-validation.
 
-Overall, Week 4 has helped me move from simply training Machine Learning models toward **validating, diagnosing, improving, and systematically optimizing models** before building a complete end-to-end pipeline.
+I also completed a professional end-to-end Machine Learning workflow that combined feature engineering, preprocessing, model training, hyperparameter tuning, and final evaluation within a single leak-free pipeline.
+
+Overall, Week 4 helped me move from simply training Machine Learning models toward **validating, diagnosing, improving, systematically optimizing, and deploying complete Machine Learning workflows using professional Scikit-learn practices.**
