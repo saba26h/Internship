@@ -350,8 +350,6 @@ model.
 
 ## 10. Model Comparison
 
-## 10. Model Comparison
-
 On the recorded validation split, Random Forest performed better than Logistic Regression.
 
 | Metric | Logistic Regression | Random Forest | Change |
