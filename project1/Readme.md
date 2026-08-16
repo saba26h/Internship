@@ -76,6 +76,8 @@ Cardiac_Patient_Monitoring/
 │   ├── evaluate.py
 │   └── __pycache__/
 │
+├── requirements.txt
+│
 └── README.md
 ```
 
@@ -90,6 +92,7 @@ Cardiac_Patient_Monitoring/
 | `src/engineered_features.py` | Feature engineering functions |
 | `src/evaluate.py` | Model evaluation functions and metrics |
 | `outputs/` | Generated results, figures, exported files, and evaluation outputs |
+| `requirements.txt` | Pinned Python package versions for a reproducible environment |
 | `README.md` | Project documentation, setup instructions, and usage guide |
 
 ------------------------------------------------------------------------
@@ -168,7 +171,14 @@ imputation when required.
 For categorical variables, the preprocessing pipeline uses the most
 frequent category when required.
 
-### 5.3 Numerical Feature Processing
+### 5.3 Duplicate Rows
+
+The dataset is checked for exact duplicate rows using `df.duplicated()`.
+
+No duplicated rows were found, so no rows needed to be removed for this
+reason.
+
+### 5.4 Numerical Feature Processing
 
 Numerical features are processed using:
 
@@ -178,7 +188,7 @@ Numerical features are processed using:
 `StandardScaler` is used for the numerical pipeline so that numerical
 variables are placed on a comparable scale.
 
-### 5.4 Categorical Feature Processing
+### 5.5 Categorical Feature Processing
 
 Categorical features are processed using:
 
@@ -188,7 +198,7 @@ Categorical features are processed using:
 `OneHotEncoder` converts categorical values into numerical indicator
 features that machine learning models can use.
 
-### 5.5 Pipeline-Based Processing
+### 5.6 Pipeline-Based Processing
 
 Preprocessing is placed inside a scikit-learn `Pipeline` and
 `ColumnTransformer`.
@@ -211,6 +221,9 @@ The analysis includes:
 -   Correlation analysis.
 -   Relationships between numerical predictors and the target.
 -   Feature-level investigation.
+-   Outlier detection and handling for the continuous numerical
+    features (`Age`, `RestingBP`, `Cholesterol`, `MaxHR`, `Oldpeak`)
+    using the IQR method, including before/after boxplots.
 
 The analysis found that:
 
@@ -218,6 +231,11 @@ The analysis found that:
     target among the numerical predictors.
 -   `Oldpeak` had the strongest positive linear correlation with the
     target among the numerical predictors.
+
+Outliers in the continuous numerical features were detected using the
+IQR method and handled through capping (winsorization), so extreme
+values are pulled to the nearest bound instead of being removed, which
+keeps the full sample size intact.
 
 The exploratory analysis is used to understand the dataset before
 selecting and evaluating machine learning models.
@@ -568,8 +586,10 @@ source .venv/bin/activate
 
 ### Install Dependencies
 
+Install the exact pinned versions from `requirements.txt`:
+
 ``` bash
-pip install numpy pandas matplotlib seaborn scikit-learn joblib jupyter
+pip install -r requirements.txt
 ```
 
 ------------------------------------------------------------------------
