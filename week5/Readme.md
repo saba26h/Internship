@@ -56,6 +56,28 @@ I learned the limitations of K-Means, how DBSCAN discovers clusters through dens
 
 ---
 
+## Day 3 - Dimensionality Reduction with PCA 🔻📉
+
+The third day focused on moving from clustering into dimensionality reduction, using Principal Component Analysis (PCA) to compress a high-dimensional dataset into a much smaller set of features while keeping as much of the original information as possible.
+
+I learned the curse of dimensionality and why it makes high-dimensional data harder to work with, how PCA finds new axes that capture the most variance in the data, how to read the explained variance ratio to judge how much information is retained, and how to decide how many components to keep and when PCA is (or isn't) the right tool.
+
+**Topics Covered:**
+
+* Understanding that real datasets often have dozens or hundreds of features, and that high dimensionality makes data sparse, makes distances lose meaning, and makes models overfit more easily.
+* Understanding that data cannot be visualized directly beyond three dimensions, which is one of the reasons dimensionality reduction is useful.
+* Understanding that PCA finds new axes, called principal components, that capture the directions of greatest variance in the data.
+* Learning that the first component captures the most variance, each following component captures the next most at a right angle to the ones before it, and each component is a combination of the original features, built on the same linear-algebra operations from Week 2.
+* Using `StandardScaler` to scale the data and `PCA(n_components=...)` with `fit_transform()` to produce the reduced representation.
+* Understanding the explained variance ratio: how much of the data's total information each component keeps, and that summing it over the kept components gives the total variance retained.
+* Understanding that PCA requires scaled data, since it is variance-based and an unscaled high-range feature would otherwise appear artificially important.
+* Using `pca.explained_variance_ratio_` for the per-component values and `.sum()` for the total variance retained.
+* Understanding how to choose the number of components by plotting cumulative explained variance against the number of components, and using a threshold such as ~95% variance to justify the choice.
+* Understanding PCA's three main uses — compressing features, reducing overfitting, and reducing data to 2D/3D for plotting — and the trade-off that the new components lose the direct interpretability of the original columns.
+* Completing a hands-on lab: scaling a high-dimensional dataset, plotting cumulative explained variance, choosing and justifying a component count for ~95% variance, reducing the data to 2 components for a colored 2D scatter plot, and documenting in Markdown what the reduction preserved and what it cost.
+
+---
+
 # Week 5 Checklist ✅
 
 ## Day 1 - Unsupervised Learning & K-Means
@@ -65,7 +87,7 @@ I learned the limitations of K-Means, how DBSCAN discovers clusters through dens
 * [x] A clustering-comparison notebook (K-Means vs. DBSCAN vs. hierarchical) with a method recommendation.
 
 ## Day 3 - Dimensionality Reduction with PCA
-* [ ] A PCA notebook with a cumulative explained-variance plot and a justified component count.
+* [x] A PCA notebook with a cumulative explained-variance plot and a justified component count.
 
 ## Day 4 - t-SNE & Anomaly Detection
 * [ ] A t-SNE and anomaly-detection notebook with a 2D visualization and Isolation Forest results.
@@ -90,6 +112,8 @@ Week-5/
 │   └── Readme.md
 │
 ├── Day-3-Dimensionality-Reduction-PCA/
+│   ├── PCA_hands_on_lab.ipynb
+│   └── Readme.md
 │
 ├── Day-4-tSNE-Anomaly-Detection/
 │
@@ -102,6 +126,11 @@ Week-5/
 
 # Week 5 Progress
 
-During Day 1, I learned how unsupervised learning discovers structure in unlabeled data, and how to use K-Means with the elbow method and silhouette score to choose the right number of clusters.
+During Day 1, I learned how unsupervised learning discovers structure in unlabeled data.
+I used K-Means with the elbow method and silhouette score to choose the right number of clusters.
 
-During Day 2, I learned why K-Means alone isn't enough for every dataset, and built and compared DBSCAN and hierarchical clustering against it — running DBSCAN to detect density-based clusters and noise, and building a dendrogram to view the data's nested cluster structure.
+During Day 2, I learned why K-Means alone isn't enough for every dataset.
+I built and compared DBSCAN and hierarchical clustering against it, detecting density-based clusters/noise and reading a dendrogram.
+
+During Day 3, I learned why high-dimensional data is hard to work with and how PCA addresses that.
+I scaled the data, chose a component count for ~95% variance, and reduced it to 2 components to visualize it.
