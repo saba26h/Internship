@@ -6,7 +6,7 @@ During the fifth week of the internship, I started learning about unsupervised l
 
 The focus of this week is understanding how to cluster data using K-Means, DBSCAN, and hierarchical clustering, reduce high-dimensional data using PCA and t-SNE, detect anomalies in unlabeled data, and select a Phase 3 capstone project with a completed Sprint 1 plan.
 
-Throughout this week, I will learn how to choose the number of clusters using the elbow method and the silhouette score, compare different clustering algorithms, interpret explained variance from PCA, visualize high-dimensional data with t-SNE, detect anomalies with Isolation Forest, and plan a full end-to-end capstone project.
+Throughout this week, I learned how to choose the number of clusters using the elbow method and the silhouette score, compare different clustering algorithms, interpret explained variance from PCA, visualize high-dimensional data with t-SNE, detect anomalies with Isolation Forest, and plan a full end-to-end capstone project.
 
 ---
 
@@ -78,6 +78,45 @@ I learned the curse of dimensionality and why it makes high-dimensional data har
 
 ---
 
+## Day 4 - t-SNE & Anomaly Detection 🔍🌲
+
+The fourth day focused on visualizing high-dimensional data with t-SNE and detecting unusual observations with Isolation Forest, closing out the unsupervised learning portion of Week 5.
+
+I learned how t-SNE differs from PCA by preserving local neighborhoods instead of global variance, why its axes carry no direct meaning and are only useful for visual inspection, what anomaly detection is and why it is usually unsupervised, and how Isolation Forest flags anomalies by measuring how quickly a point can be isolated from the rest of the data.
+
+**Topics Covered:**
+
+* Understanding t-SNE as a dimensionality-reduction technique built specifically for visualization, rather than for feeding into a model.
+* Understanding that t-SNE preserves local neighborhoods, keeping points that were close together in high dimensions close together in 2D, unlike PCA which preserves global variance.
+* Using `TSNE(n_components=2, perplexity=...)` with `fit_transform()` to produce a 2D embedding.
+* Comparing PCA and t-SNE side by side: PCA is fast and its components have interpretable directions; t-SNE is slower and its axes only reflect relative position, not a fixed meaning.
+* Understanding that t-SNE's output changes with its settings and is meant for looking at the data, not for downstream modeling.
+* Understanding anomaly detection as finding points that differ significantly from the norm, and why it is often unsupervised since anomalies are rare and rarely pre-labeled.
+* Learning the Isolation Forest algorithm: anomalies are easier to isolate than normal points because they sit apart from the dense mass of the data, so fewer random partitions are needed to isolate them.
+* Using `IsolationForest(contamination=...)` with `fit_predict()`, where `-1` marks an anomaly and `1` marks a normal point.
+* Understanding the `contamination` parameter as an estimate of the expected fraction of anomalies, and how DBSCAN's noise points (Day 2) are a related, simpler form of anomaly detection.
+* Completing a hands-on lab: reducing a high-dimensional dataset to 2D with t-SNE and plotting it by cluster, comparing the t-SNE plot with the Day 3 PCA plot, running Isolation Forest and reporting the number of flagged points, and inspecting two flagged points to hypothesize why they were flagged.
+
+---
+
+## Day 5 - Phase 3 Project Selection & Sprint 1 Planning 🚀
+
+The fifth and final day of Week 5 shifted from technique to planning: choosing my Phase 3 capstone project and setting up its first sprint before Phase 3 begins.
+
+I learned what Phase 3 involves, reviewed the six possible capstone project types, and went through what the "Definition of Done" and Sprint 1 planning actually require before any new work starts.
+
+**Topics Covered:**
+
+* Understanding Phase 3 as the applied core of the program: one complete AI/ML project built end-to-end, from raw data to a deployed product, across four one-week sprints.
+* Reviewing the six capstone project options (Customer Churn Prediction, House Price Prediction, Sentiment Analysis Tool, Image Classifier, Recommendation System, Fraud Detection Model) and what each one involves.
+* Understanding the professional baseline every capstone must meet: a documented notebook covering EDA → preprocessing → modeling → evaluation, a trained model with reported metrics, a working deployment, a clean GitHub repo, and a short technical write-up.
+* Understanding Sprint 1 planning: choosing the first backlog tasks (dataset selection, EDA, baseline model), estimating effort, and setting a clear sprint goal.
+* Understanding that every backlog task needs written acceptance criteria before work starts — the notebook runs without errors, work is committed to the right feature branch, a pull request is opened for review, results are documented, and metrics are compared to the baseline.
+
+Since the Cardiac Patient Monitoring System is already my ongoing project — started in Week 4 and extended with unsupervised learning in Week 5 — I used Day 5 to formally continue that same project into Phase 3, rather than picking one of the six new capstone options. I restated the project's problem statement and Definition of Done, and wrote a Sprint 1 backlog covering the remaining documentation and cleanup tasks before the project moves into Phase 3.
+
+---
+
 # Week 5 Checklist ✅
 
 ## Day 1 - Unsupervised Learning & K-Means
@@ -90,34 +129,37 @@ I learned the curse of dimensionality and why it makes high-dimensional data har
 * [x] A PCA notebook with a cumulative explained-variance plot and a justified component count.
 
 ## Day 4 - t-SNE & Anomaly Detection
-* [ ] A t-SNE and anomaly-detection notebook with a 2D visualization and Isolation Forest results.
+* [x] A t-SNE and anomaly-detection notebook with a 2D visualization and Isolation Forest results.
 
 ## Day 5 - Phase 3 Project Selection & Sprint 1 Planning
-* [ ] A signed-off Phase 3 project selection, problem statement, and Sprint 1 plan with backlog and acceptance criteria.
+* [x] A signed-off Phase 3 project selection, problem statement, and Sprint 1 plan with backlog and acceptance criteria.
 
 ---
 
 # Week 5 Folder Structure
 
 ```text
-Week-5/
+week5/
 │
-├── Day-1-Unsupervised-Learning-KMeans/
+├── day1/
 │   ├── kmeans_hands-on-lab.ipynb
 │   ├── creditcard_45k.csv
 │   └── Readme.md
 │
-├── Day-2-DBSCAN-Hierarchical-Clustering/
+├── day2/
 │   ├── DBSCAN___Hierarchical_Clustering.ipynb
 │   └── Readme.md
 │
-├── Day-3-Dimensionality-Reduction-PCA/
+├── day3/
 │   ├── PCA_hands_on_lab.ipynb
 │   └── Readme.md
 │
-├── Day-4-tSNE-Anomaly-Detection/
+├── day4/
+│   ├── Day4_tSNE_Anomaly_Detection.ipynb
+│   └── Readme.md
 │
-├── Day-5-Phase3-Project-Selection-Sprint1-Planning/
+├── day5/
+│   └── Readme.md
 │
 └── Readme.md
 ```
@@ -134,3 +176,7 @@ I built and compared DBSCAN and hierarchical clustering against it, detecting de
 
 During Day 3, I learned why high-dimensional data is hard to work with and how PCA addresses that.
 I scaled the data, chose a component count for ~95% variance, and reduced it to 2 components to visualize it.
+
+During Day 4, I learned how t-SNE reveals local structure that PCA can miss, and used it alongside Isolation Forest to flag unusual observations in the data.
+
+During Day 5, I closed out Phase 2 by formally continuing the Cardiac Patient Monitoring System into Phase 3, writing out its Sprint 1 backlog and acceptance criteria.
